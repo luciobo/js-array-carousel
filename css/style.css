@@ -1,6 +1,10 @@
 
 
-.slider-container, img {
+.slider-img-none {
     display: none;
+}
+
+.slider-img-vis {
+    display: block;
 }
 

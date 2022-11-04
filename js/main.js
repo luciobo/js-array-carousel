@@ -12,3 +12,12 @@ const btnPrev = document.getElementById("slider-btn-prev");
 for (let i = 0; i < immages.length; i++) {
 
 }
+
+btnNext.addEventListener("click", function () {
+    
+})
+
+
+btnPrev.addEventListener("click", function () {
+    
+})
