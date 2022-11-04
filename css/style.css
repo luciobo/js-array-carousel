@@ -1,8 +1,9 @@
 
 
-.slider-img-none {
+.slider-container img {
     display: none;
 }
+
 
 .slider-img-vis {
     display: block;
