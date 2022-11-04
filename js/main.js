@@ -13,8 +13,10 @@ const sliderContainer = document.querySelector(".slider-container");
 
 
 for (let i = 0; i < immages.length; i++) {
-    
+
 }
+
+
 
 
 
