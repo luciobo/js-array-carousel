@@ -28,8 +28,8 @@ btnAvanti.addEventListener("click", function () {
     currentImgIndex++;
     sliderImgEl.src = immages[currentImgIndex];
 
-    if (currentImgIndex === 4 ) {
-        currentImgIndex = 0;
+    if (currentImgIndex > 3) {
+        currentImgIndex = -1;
     }
 
 })
@@ -41,7 +41,7 @@ btnIndietro.addEventListener("click", function () {
     currentImgIndex--;
     sliderImgEl.src = immages[currentImgIndex];
 
-    if (currentImgIndex < 0 ) {
-        currentImgIndex = 0;
+    if (currentImgIndex < 0) {
+        currentImgIndex = 4;
     }
 })
