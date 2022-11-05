@@ -25,10 +25,23 @@ const btnIndietro = document.getElementById("slider-btn-indietro");
 btnAvanti.addEventListener("click", function () {
     console.log("bottone avanti cliccato")
 
+    currentImgIndex++;
+    sliderImgEl.src = immages[currentImgIndex];
+
+    if (currentImgIndex === 4 ) {
+        currentImgIndex = -1;
+    }
+
 })
 
 
 btnIndietro.addEventListener("click", function () {
     console.log("bottone indietro cliccato")
 
+    currentImgIndex--;
+    sliderImgEl.src = immages[currentImgIndex];
+
+    if (currentImgIndex < 0 ) {
+        currentImgIndex = 0;
+    }
 })
