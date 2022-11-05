@@ -26,11 +26,12 @@ btnAvanti.addEventListener("click", function () {
     console.log("bottone avanti cliccato")
 
     currentImgIndex++;
-    sliderImgEl.src = immages[currentImgIndex];
 
-    if (currentImgIndex > 3) {
-        currentImgIndex = -1;
+    if (currentImgIndex > immages.length - 1) {
+        currentImgIndex = 0;
     }
+
+    sliderImgEl.src = immages[currentImgIndex];
 
 })
 
@@ -39,9 +40,10 @@ btnIndietro.addEventListener("click", function () {
     console.log("bottone indietro cliccato")
 
     currentImgIndex--;
-    sliderImgEl.src = immages[currentImgIndex];
 
     if (currentImgIndex < 0) {
-        currentImgIndex = 0;
+        currentImgIndex = 4;
     }
+
+    sliderImgEl.src = immages[currentImgIndex];
 })
