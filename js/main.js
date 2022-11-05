@@ -42,6 +42,6 @@ btnIndietro.addEventListener("click", function () {
     sliderImgEl.src = immages[currentImgIndex];
 
     if (currentImgIndex < 0) {
-        currentImgIndex = 4;
+        currentImgIndex = 0;
     }
 })
