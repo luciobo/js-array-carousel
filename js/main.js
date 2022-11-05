@@ -29,7 +29,7 @@ btnAvanti.addEventListener("click", function () {
     sliderImgEl.src = immages[currentImgIndex];
 
     if (currentImgIndex === 4 ) {
-        currentImgIndex = -1;
+        currentImgIndex = 0;
     }
 
 })
